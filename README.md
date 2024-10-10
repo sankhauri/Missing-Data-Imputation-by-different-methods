@@ -3,23 +3,23 @@ Missing values are usually attributed to human error when processing data, machi
 
 In this project, we consider a dataset called water_potability which determines the water quality depending on the 9 features. Our goal is to conduct a comparative study of different missing value imputation methods to identify the method which yields the best predictive model for our response that is whether the water is worth drinking or not.
 
-Methodology
+## Methodology
 The dataset exhibits a Missing Completely at Random (MCAR) mechanism, a conclusion supported by the significantly high p-value obtained from the LittleMCAR test. However, opting for the straightforward approach of deleting missing rows poses a substantial risk of information loss, particularly given the dataset's modest size and the relatively high percentage of missing values.
 
 To address this challenge, we've chosen five distinct imputation methods for this project: Mean Imputation, Hot Deck Imputation, Mice with pmm and cart, and Amelia-II.  With the exception of mean imputation, these methods represent advancements over traditional missing data techniques, providing unbiased estimates in scenarios involving both MCAR and Missing at Random (MAR) data.
 Our subsequent focus involves a comparative analysis of these four imputation methods. Briefly, the methodologies are outlined as follows.
 
-Mean Imputation: This is the most simplistic method for continuous variables where we replace the missing values with the mean of the observed values of that variable. 
+# Mean Imputation: This is the most simplistic method for continuous variables where we replace the missing values with the mean of the observed values of that variable. 
 
-MICE: Multiple Imputation with Chained Equations (MICE) assumes that the missing data are Missing at Random (MAR), which means that the probability that a value is missing depends only on observed value and can be predicted using them. It imputes data on a variable-by-variable basis by specifying an imputation model per variable. It has options like “pmm”,” cart” etc. 
+# MICE: Multiple Imputation with Chained Equations (MICE) assumes that the missing data are Missing at Random (MAR), which means that the probability that a value is missing depends only on observed value and can be predicted using them. It imputes data on a variable-by-variable basis by specifying an imputation model per variable. It has options like “pmm”,” cart” etc. 
 
-Sequential Hot Deck Imputer:  is a method used for imputing missing values in a dataset. In this approach, missing values are replaced with observed values from similar cases within the same dataset. The term "hot deck" refers to a pool of potential donors, and "sequential" indicates the order in which the imputation occurs. Assumes missing data is MAR or MCAR.
+# Sequential Hot Deck Imputer:  is a method used for imputing missing values in a dataset. In this approach, missing values are replaced with observed values from similar cases within the same dataset. The term "hot deck" refers to a pool of potential donors, and "sequential" indicates the order in which the imputation occurs. Assumes missing data is MAR or MCAR.
 
-Amelia II: This package (Amelia II) is named after Amelia Earhart, the first female aviator to fly solo across the Atlantic Ocean. History says, she got mysteriously disappeared (missing) while flying over the Pacific Ocean in 1937, hence this package was named to solve missing value problems. This package also performs multiple imputation (generate imputed data sets) to deal with missing values. Multiple imputation helps to reduce bias and increase efficiency.  It is enabled with bootstrap based EMB algorithm which makes it faster and robust to impute many variables including cross sectional, time series data etc. The reader can check reference [7] for more information.
+# Amelia II: This package (Amelia II) is named after Amelia Earhart, the first female aviator to fly solo across the Atlantic Ocean. History says, she got mysteriously disappeared (missing) while flying over the Pacific Ocean in 1937, hence this package was named to solve missing value problems. This package also performs multiple imputation (generate imputed data sets) to deal with missing values. Multiple imputation helps to reduce bias and increase efficiency.  It is enabled with bootstrap based EMB algorithm which makes it faster and robust to impute many variables including cross sectional, time series data etc. The reader can check reference [7] for more information.
 
 
 
-Reference: 
+## Reference: 
 [1] Ayilara OF, Zhang L, Sajobi TT, Sawatzky R, Bohm E, Lix LM. Impact of missing data on bias and precision when estimating change in patient-reported outcomes from a clinical registry. Health Qual Life Outcomes. 2019;17(1):106. 
 [2] Little, R.J.A. (1992). Regression with missing X's: A review. Journal of the American Statistical Association, 87, 1227-1237. 
 [3] Little, R.J.A., & Rubin, D.B. (1987). Statistical Analysis with Missing Data. New York: John Wiley & Sons.
