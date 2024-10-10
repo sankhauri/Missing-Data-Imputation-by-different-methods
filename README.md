@@ -20,8 +20,8 @@ Our subsequent focus involves a comparative analysis of these four imputation me
 
 
 ## Reference: 
-[1] Ayilara OF, Zhang L, Sajobi TT, Sawatzky R, Bohm E, Lix LM. Impact of missing data on bias and precision when estimating change in patient-reported outcomes from a clinical registry. Health Qual Life Outcomes. 2019;17(1):106. 
-[2] Little, R.J.A. (1992). Regression with missing X's: A review. Journal of the American Statistical Association, 87, 1227-1237. 
+[1] Ayilara OF, Zhang L, Sajobi TT, Sawatzky R, Bohm E, Lix LM. Impact of missing data on bias and precision when estimating change in patient-reported outcomes from a clinical registry. Health Qual Life Outcomes. 2019;17(1):106.\\ 
+[2] Little, R.J.A. (1992). Regression with missing X's: A review. Journal of the American Statistical Association, 87, 1227-1237. \\
 [3] Little, R.J.A., & Rubin, D.B. (1987). Statistical Analysis with Missing Data. New York: John Wiley & Sons.
 [4] Therese D Pigott (2001). A review of methods for missing data, Educational Research and Evaluation 2001, Vol. 7, No. 4, pp. 353-383.
 [5] Schafer, J. L., & Graham, J. W. (2002). Missing data: Our view of the state of the art. Psychological Methods, 7,147−177.
